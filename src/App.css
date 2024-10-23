@@ -1,0 +1,36 @@
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: wheat;
+}
+
+.tic-tac {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(var(--columns), 40px);
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.tic-tac__cell {
+  border: 1px solid black;
+  height: 40px;
+  max-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0;
+  border-left: 0;
+}
+
+.row-0 {
+  border-top: 1px solid black;
+}
+
+.col-0 {
+  border-left: 1px solid black;
+}
